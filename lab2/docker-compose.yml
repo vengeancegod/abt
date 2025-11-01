@@ -1,0 +1,10 @@
+services:
+  app:
+    image: dvivanov/aido-student-image:2024
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    volumes:
+      - .:/home/appuser/student
+      - ./duckietown_config:/home/appuser/aido-auto/gym-duckietown/gym_duckietown/tasks/default
+
